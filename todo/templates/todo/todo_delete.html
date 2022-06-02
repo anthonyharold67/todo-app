@@ -1,0 +1,9 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+    <form action="" method="post">
+        <p>Are you sure delete ?</p>
+        <input type="submit" value="Yes">
+    </form>
+    <a class="btn btn-danger" href="{% url 'list' %}">No</a>
+{% endblock content %}
